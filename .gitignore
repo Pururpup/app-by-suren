@@ -90,7 +90,7 @@ activemq-data/
 
 *.sage.py
 
-.env
+fastapi-app/.env
 .envrc
 .venv
 env/
