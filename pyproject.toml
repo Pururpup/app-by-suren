@@ -9,3 +9,9 @@ pydantic = {extras = ["email"], version = "^2.13.4"}
 pydantic-settings = "^2.14.2"
 sqlalchemy = {extras = ["asyncio"], version = "^2.0.51"}
 asyncpg = "^0.31.0"
+alembic = "^1.19.0"
+
+[dependency-groups]
+dev = [
+    "black (>=26.5.1,<27.0.0)"
+]
