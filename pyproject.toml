@@ -10,6 +10,7 @@ pydantic-settings = "^2.14.2"
 sqlalchemy = {extras = ["asyncio"], version = "^2.0.51"}
 asyncpg = "^0.31.0"
 alembic = "^1.19.0"
+fastapi-users = {extras = ["sqlalchemy"], version = "^15.0.5"}
 
 [dependency-groups]
 dev = [
