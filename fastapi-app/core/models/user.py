@@ -1,14 +1,8 @@
-from sqlalchemy import UniqueConstraint
-from sqlalchemy.orm import mapped_column, Mapped
-
-from .base import Base
+from fastapi_users.db import SQLAlchemyBaseUserTable
+from core.models import Base
 
 
-class User(Base):
-    username: Mapped[str] = mapped_column(unique=True)
-    foo: Mapped[int]
-    bar: Mapped[int]
+class User(Base, SQLAlchemyBaseUserTable[int]):
+    pass
 
-    __table_args__ = (
-        UniqueConstraint("foo", "bar"),
-    )
+
